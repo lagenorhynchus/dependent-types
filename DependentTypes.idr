@@ -54,7 +54,7 @@ filter' p (x::xs) with (filter' p xs)
   | (_ ** xs') = if p x then (_ ** (x :: xs')) else (_ ** xs')
 
 
--- 自然数の有限数合Finの定義
+-- 自然数の有限集合Finの定義
 data Fin' : Nat' -> Type where
   FZ' : Fin' (S' n)
   FS' : Fin' n -> Fin' (S' n)

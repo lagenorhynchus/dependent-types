@@ -33,7 +33,7 @@ head' :: Vect ('S n) a -> a
 head' (x:._) = x
 
 
--- 自然数の有限数合Finの定義
+-- 自然数の有限集合Finの定義
 data Fin :: Nat -> * where
   FZ :: Fin ('S n)
   FS :: Fin n -> Fin ('S n)

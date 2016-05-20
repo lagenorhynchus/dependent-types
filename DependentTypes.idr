@@ -60,5 +60,5 @@ data Fin' : Nat' -> Type where
   FS' : Fin' n -> Fin' (S' n)
 
 index'' : Fin' n -> Vect' n a -> a
-index'' FZ' (x::_)      = x
+index'' FZ'     (x::_)  = x
 index'' (FS' k) (_::xs) = index'' k xs

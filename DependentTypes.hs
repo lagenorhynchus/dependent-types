@@ -21,9 +21,9 @@ instance Show a => Show (Vect n a) where
   show xs = "[" ++ show' xs ++ "]"
     where
       show' :: Show a => Vect n a -> String
-      show' Nil = ""
+      show' Nil      = ""
       show' (y:.Nil) = show y
-      show' (y:.ys) = show y ++ ", " ++ show' ys
+      show' (y:.ys)  = show y ++ ", " ++ show' ys
 
 toList :: Vect n a -> [a]
 toList Nil     = []
